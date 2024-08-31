@@ -1,0 +1,14 @@
+{
+  "name": "type-challenges-solved",
+  "version": "0.0.0",
+  "description": "My solutions to https://github.com/type-challenges/type-challenges",
+  "type": "module",
+  "engines": {
+    "node": ">= 22.4.1"
+  },
+  "devDependencies": {
+    "typescript": "5.5.4",
+    "@type-challenges/utils": "0.1.1"
+  },
+  "author": "Ferran Montoliu Boneu"
+}
