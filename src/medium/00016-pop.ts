@@ -26,7 +26,7 @@
 
 /* _____________ Your Code Here _____________ */
 
-type Pop<T extends unknown[]> =
+type Pop<T extends (unknown[] | readonly unknown[])> =
     T extends [...infer AllExceptLast, unknown]
         ? AllExceptLast
         : []
