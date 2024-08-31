@@ -28,12 +28,12 @@ type MyAwaited<T> =
         ? ReturnType 
         : T
 
-type PromiseAllReturnType<T extends any[]> =
+type PromiseAllReturnType<T extends unknown[]> =
     Promise<{
         [Key in keyof T]: MyAwaited<T[Key]>
     }>
 
-declare function PromiseAll<T extends any[]>(values: readonly [...T]): PromiseAllReturnType<T>
+declare function PromiseAll<T extends unknown[]>(values: readonly [...T]): PromiseAllReturnType<T>
 
 /* _____________ Test Cases _____________ */
 import type { Equal, Expect } from '@type-challenges/utils'
